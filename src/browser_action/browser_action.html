@@ -1,0 +1,30 @@
+<!doctype html>
+<style type="text/css">
+	html {
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+		color:white;
+	}
+	body{
+		margin: 0 2px;
+	}
+
+	#mainPopup{
+		width: 300px;
+		background: #222326;
+		border-radius: 4px;
+		padding: 10px;
+		font-size: 13px;
+		line-height: 1.4rem;
+	}
+	a{
+		color:#1a97ea;
+	}
+</style>
+    <script src="browser_action.js"></script>
+
+<div id="mainPopup">
+	<div id="noClientId">Please navigate to <a href="https://soundcloud.com">SoundCloud.com</a> & wait for a button to appear here</div>
+	<div id="hasClientId" style="display: none;">
+		ClientId found, please press the link to use this ID in the app. <a id="launch" target="_blank">Launch Auryo</a>
+	</div>
+</div>
